@@ -1,11 +1,6 @@
-import sys
+from utils import with_input
 
-if len(sys.argv) > 1 and sys.argv[1] == "--test":
-    filename = "data/day1-test.txt"
-else:
-    filename = "data/day1.txt"
-
-with open(filename, "r") as file:
+with with_input(1) as file:
     data = file.read().splitlines()
 
 
