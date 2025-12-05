@@ -1,7 +1,7 @@
 import math
-from utils import with_input
+from utils import open_input
 
-with with_input(2) as file:
+with open_input(2) as file:
     ranges = [tuple(map(int, line.split("-"))) for line in file.read().split(",")]
 
 

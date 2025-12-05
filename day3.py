@@ -1,7 +1,7 @@
-from utils import with_input
+from utils import open_input
 
 
-with with_input(3) as file:
+with open_input(3) as file:
     battery_sets = [list(map(int, line)) for line in file.read().splitlines()]
 
 

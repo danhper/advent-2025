@@ -1,6 +1,6 @@
-from utils import with_input
+from utils import open_input
 
-with with_input(1) as file:
+with open_input(1) as file:
     data = file.read().splitlines()
 
 
